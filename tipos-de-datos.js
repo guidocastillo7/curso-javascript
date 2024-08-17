@@ -19,3 +19,6 @@ console.log(typeof {nombre: "Guido", apellido: "Castillo", edad: 28})
 
 // Null - Nulo: También lo toma como object
 console.log(typeof null)
+
+// Undefined - No definido
+console.log(typeof undefined)
