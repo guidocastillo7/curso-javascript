@@ -57,3 +57,24 @@ console.log(muestraFuncion)
 le puedo pasar los parametros de dicha funcion directamente a la variable */
 let variableFuncion = nombreCompleto
 console.log(variableFuncion("Variable", "Funcion"))
+
+
+/* Funciones anonimas: Son las funciones sin nombre, las podemos almacenar en una variable y ese seria su nomobre
+o se pueden escribir entre parentesis y se ejecutan de una vez */
+let sumarTres = function(a, b, c) {
+    console.log(a+b+c)
+}
+sumarTres(5, 8, 7);
+
+// Para escribirla y que se ejecute de una vez tiene que ir entre parentesis y se le pasan los parametros al final en parentesis
+(function(c,d) {
+    console.log(c+d)
+}(10, 7))
+
+
+/* Funciones como constantes: Cuando se crea una variable con el valor de una funcion
+siempre se deben crear como 'const' porque el codigo de la funcion nunca tiene que cambiar */
+const funcionHola = function(nombre) {
+    console.log(`Hola ${nombre}`)
+}
+funcionHola("Guido")
