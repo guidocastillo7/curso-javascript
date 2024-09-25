@@ -32,3 +32,28 @@ function sumar(num1, num2) {
 }
 sumar(5, 25)
 sumar("10", "5")
+
+
+// Funciones con return: funciona igual escribiendo el return al final de la funcion
+
+function nombreCompleto(nombre, apellido) {
+    let result = `${nombre} ${apellido}`
+
+    return result
+}
+console.log("Aqui el nombre completo: ", nombreCompleto("Guido", "Castillo"))
+
+/* Funciones de primera clase: Se consideran de 'primera clase' 
+todos los datos o cosas en programacion que se puedan almacenar en una variable */
+let nombreFinal = nombreCompleto("Guido Jose", "Castillo Vera")
+console.log(nombreFinal)
+
+/* Si yo almaceno en la variable la funcion con solo su nombre y la imprimo
+me muestra todo el codigo de la funcion */
+let muestraFuncion = nombreCompleto
+console.log(muestraFuncion)
+
+/* Si yo almaceno en la variable la funcion con solo su nombre
+le puedo pasar los parametros de dicha funcion directamente a la variable */
+let variableFuncion = nombreCompleto
+console.log(variableFuncion("Variable", "Funcion"))
