@@ -36,3 +36,10 @@ nombres.slice(0, 2) // OJO aqui seria desde el elemento 0 hasta el elemente ANTE
 console.log(nombres)
 let cortar = nombres.slice(0, 2) 
 console.log(cortar) // Se imprime la variable donde se hizo el slice y ahi te devuelve el array cortado
+
+
+
+/**
+ * Consultar aqui mas metodos de arrays:
+ * https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Indexed_collections#M%C3%A9todos_de_array
+ */
