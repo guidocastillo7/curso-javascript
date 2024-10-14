@@ -5,6 +5,7 @@
  * Y como tal este metodo no modifica el array
  */
 
+console.log("-----FOREACH-----")
 let personas = ["Guido", "Adolfo", "Guibe", "Mami", "Papi"]
 // Itera cada campo del array y hace lo que diga la funcion
 personas.forEach(persona => console.log(persona))
@@ -21,6 +22,23 @@ console.log(dato)
  * La diferencia es que este metodo si devuelve un nuevo array
  */
 
-// Aqui lo guardo en una variable, y esa variable se convierte en el nuevo array creado con map
+/* Aqui lo guardo en una variable, y se convierte en un array creado con lo que devuelva la funcion
+en este caso me devuelve el string Hola persona */
 let dato2 = personas.map(persona => `Hola ${persona}`)
+console.log("-----MAP-----")
 console.log(dato2)
+
+
+
+/**
+ * Metodo filter: Tambien funciona como bucle iterando
+ * Este metodo tambien me devuelve un nuevo array 
+ * Pero filtrando por la condicion puesta en la funcion
+ */
+
+/* Por ejemplo aqui me crea un array con los numeros mayores a 4
+No me devuelve true o false como seria en el caso de map */
+let numeros = [2, 4, 6, 8, 10]
+let nuevos_numeros = numeros.filter(num => num > 4)
+console.log("-----FILTER-----")
+console.log(nuevos_numeros)
