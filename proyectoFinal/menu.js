@@ -1,3 +1,5 @@
+// Listado del menu del restaurant
+
 const menu = [
     {
         nombre: "Margherita",
