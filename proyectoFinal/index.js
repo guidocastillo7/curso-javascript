@@ -5,6 +5,7 @@ const usuario = {
 }
 
 const pedido = []
+let pago = 0
 
 const showMenu = () => {
     console.log("Codigo - Producto - Precio")
@@ -22,5 +23,25 @@ const pedirProducto = cod => {
 
     pedido.push(busqueda) 
     console.log("El producto se ha agregado al pedido. Su pedido es:")
-    return pedido
+    return verPedido()
+}
+
+const verPedido = () => pedido
+
+const calcularPago = () => {
+    let total = 0
+    for (producto of pedido) {
+        total += producto.precio
+    }
+    pago = total
+    return pago
+}
+
+const finalizarPedido = () => {
+    calcularPago()
+    usuario.deuda = pago
+
+    pedido = []
+    pago = 0
+    return `${usuario.nombre}, debes pagar ${usuario.deuda}$.`
 }
